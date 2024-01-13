@@ -61,8 +61,28 @@ public class StringOps {
         return "";
     }
 
-    public static int[] allIndexOf (String string, char chr) {
+    public static int[] allIndexOf (String str, char chr) {
         // Write your code here:
-        return new int[1];
+        int length = str.length() ;
+        int count = 0;
+        for(int i = 0; i< length; i++){
+            if (chr == str.charAt(i)){
+                count = count ++;
+            }
+        }
+        int[] counter =new int [count];
+        for(j = 0; j<= counter.length; j++){
+            counter[j] = 0;
+            count = 0;
+        }
+            for(int i = 0; i< length; i++){
+                if (chr == str.charAt(i)){
+                    counter [count] = i; 
+                    count = count ++;
+                }
+            } 
+        
+       return counter;
     }
 }
+   
