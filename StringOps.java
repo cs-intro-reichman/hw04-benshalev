@@ -34,9 +34,9 @@ public class StringOps {
         int length = str.length() ;
         for(int i = 0; i< length; i++){
             char ch = str.charAt(i);
-            if (ch == ' '){
-                fixstring = fixstring + ch;
-            }
+            //if (ch == ' '){
+              //  fixstring = fixstring + ch;
+            //}
             if ( ch >= 97 && ch <= 122){
                 if (ch == 97 || ch == 101 || ch == 111 || ch ==117 || ch == 105 ){
                     ch = (char) (ch - 32);
