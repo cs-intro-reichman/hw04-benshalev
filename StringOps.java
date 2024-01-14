@@ -69,7 +69,7 @@ public class StringOps {
                 count++;
             }
         }
-        int[] arr = new int [count];
+        int[] arr = new int[count];
         for(int j = 0; j < arr.length; j++){
             arr[j] = 0; 
         }
