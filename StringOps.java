@@ -63,9 +63,8 @@ public class StringOps {
 
     public static int[] allIndexOf (String str, char chr) {
         // Write your code here:
-        int length = str.length() ;
         int count = 0;
-        for(int i = 0; i< length; i++){
+        for(int i = 0; i< str.length(); i++){
             if (chr == str.charAt(i)){
                 count++;
             }
@@ -75,7 +74,7 @@ public class StringOps {
             arr[j] = 0; 
         }
         count = 0;
-        for(int i = 0; i< length; i++){
+        for(int i = 0; i< str.length(); i++){
             if (chr == str.charAt(i)){
                 arr [count] = i; 
                 count++;
