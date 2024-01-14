@@ -67,22 +67,21 @@ public class StringOps {
         int count = 0;
         for(int i = 0; i< length; i++){
             if (chr == str.charAt(i)){
-                count = count ++;
+                count++;
             }
         }
-        int[] counter =new int [count];
-        for(j = 0; j<= counter.length; j++){
-            counter[j] = 0;
-            count = 0;
+        int[] arr =new int [count];
+        for(j = 0; j < arr.length; j++){
+            arr[j] = 0; 
         }
-            for(int i = 0; i< length; i++){
-                if (chr == str.charAt(i)){
-                    counter [count] = i; 
-                    count = count ++;
-                }
-            } 
-        
-       return counter;
+        count = 0;
+        for(int i = 0; i< length; i++){
+            if (chr == str.charAt(i)){
+                arr [count] = i; 
+                count++;
+            }
+       }  
+       return arr;
     }
 }
    
