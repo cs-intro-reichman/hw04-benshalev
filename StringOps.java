@@ -70,8 +70,8 @@ public class StringOps {
                 count++;
             }
         }
-        int[] arr =new int [count];
-        for(j = 0; j < arr.length; j++){
+        int[] arr = new int [count];
+        for(int j = 0; j < arr.length; j++){
             arr[j] = 0; 
         }
         count = 0;
