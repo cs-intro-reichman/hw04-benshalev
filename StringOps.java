@@ -24,8 +24,12 @@ public class StringOps {
     
     
     public static void main(String[] args) {
-        String lowString = "Hello World";
-        System.out.println(capVowelsLowRest(lowString));
+        String s = "niir";
+        char c = 'i';
+        int [] arr = new int [3]; 
+        System.out.println(allIndexOf(s , c));
+        
+        System.out.println();
     }
 
     public static String capVowelsLowRest (String str) {
@@ -79,6 +83,9 @@ public class StringOps {
                 arr [count] = i; 
                 count++;
             }
+       }
+       for(int i = 0; i < arr.length; i++){
+        System.err.println(arr[i]);
        }  
        return arr;
     }
